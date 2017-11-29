@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( HoughLineTransform )
+find_package( OpenCV REQUIRED )
+INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS})
+add_executable( hough hough.cpp )
+target_link_libraries( hough ${OpenCV_LIBS} )
